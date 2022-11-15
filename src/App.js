@@ -1,5 +1,8 @@
 import './App.css';
-import './style.css';
+import Twitter from './images/Twitter.png';
+import LinkedIn from './images/linkedIn.png';
+import Github from './images/Github.png';
+import Dev from './images/Dev.png';
 
 function App() {
 	return (
@@ -45,25 +48,25 @@ function App() {
 							<ul>
 								<li>
 									<a href="https://www.linkedIn.com/" className="links-img">
-										<img src="images/linkedIn.png" alt="" />
+										<img src={LinkedIn} alt="" />
 										LINKEDIN/username
 									</a>
 								</li>
 								<li>
 									<a href="https://www.Twitter.com/" className="links-img">
-										<img src="images/Twitter.png" alt="" />
+										<img src={Twitter} alt="" />
 										TWITTER/@user@-handle
 									</a>
 								</li>
 								<li>
 									<a href="https://www.Github.com/" className="links-img">
-										<img src="images/Github.png" alt="" />
+										<img src={Github} alt="" />
 										GITHUB/username
 									</a>
 								</li>
 								<li>
 									<a href="https://www.dev-blog.com/" className="links-img">
-										<img src="images/Dev.png" alt="" />
+										<img src={Dev} alt="" />
 										BLOG/blog-name
 									</a>
 								</li>
