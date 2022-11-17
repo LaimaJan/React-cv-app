@@ -1,27 +1,26 @@
 import './App.css';
 import { Hr, HrOneLine } from './components/Hr';
 import Header from './components/Header';
-import Title from './components/Title';
 import LinksUl from './components/LinksUl';
 import Education from './components/Education';
 import Pills from './components/RoundedSkills';
 import WorkExp from './components/WorkExp';
 import FooterContent from './components/FooterCont';
+import Section from './components/Section';
 
 function App() {
 	return (
 		<div className="App">
-			<Header></Header>
-
+			<Header />
 			<div className="links-about-me">
-				<section className="links section">
-					<Title name="links" />
-					<Hr className="line-hr-small"></Hr>
+				<Section value="links" titleName="links" hrClassName="line-hr-small">
 					<LinksUl />
-				</section>
-				<section className="about-me section">
-					<Title name="about me" />
-					<Hr className="line-hr-medium"></Hr>
+				</Section>
+				<Section
+					value="about-me"
+					titleName="about me"
+					hrClassName="line-hr-medium"
+				>
 					<p className="lorem">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
 						provident aperiam. Id quia omnis fugit assumenda sit, similique
@@ -33,95 +32,104 @@ function App() {
 						nisi quod possimus cumque in vel. Ad suscipit eius similique placeat
 						enim quae nemo atque dolores, necessitatibus mollitia iste rerum!
 					</p>
-				</section>
+				</Section>
 			</div>
 
-			<div className="education-personal-technical-skills">
-				<section className="education section">
-					<Title name="education" />
-					<Hr className="line-hr-small"></Hr>
-					<Education className="education-content top" />
-					<Hr className="line-hr-one"></Hr>
-					<Education className="education-content" />
-				</section>
-				<section className="personal-skills section">
-					<Title name="personal skills" />
-					<Hr className="line-hr-small"></Hr>
-					<Pills color="green">
-						<p>Teamwork</p>
-					</Pills>
-					<Pills color="yellow">
-						<p>Communication</p>
-					</Pills>
-					<Pills color="orange">
-						<p>Organization</p>
-					</Pills>
-				</section>
-				<section className="technical-skills section">
-					<Title name="technical skills" />
-					<Hr className="line-hr-small"></Hr>
-					<Pills color="green">
-						<p>Html</p>
-					</Pills>
-					<Pills color="green">
-						<p>Css/scss</p>
-					</Pills>
-					<Pills color="yellow">
-						<p>Javascript</p>
-					</Pills>
-					<Pills color="yellow">
-						<p>React.js</p>
-					</Pills>
-				</section>
-			</div>
-			<section className="work-experience section">
-				<Title name="work experience" />
-				<Hr className="line-hr-long"></Hr>
-				<div className="all-work-experience-content">
-					<WorkExp
-						verticalLine="my-work"
-						position="Job psition"
-						company="Company"
-						date="2018-present"
-						etc1="Lorem, ipsum dolor."
-						etc2="Lorem, ipsum dolor."
+			<main>
+				<div className="education-personal-technical-skills">
+					<Section
+						value="education"
+						titleName="education"
+						hrClassName="line-hr-small"
 					>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Repudiandae quaerat itaque ipsa amet et accusantium deleniti
-							ipsam, quibusdam necessitatibus cumque!
-						</p>
-					</WorkExp>
-					<WorkExp
-						verticalLine="my-work"
-						position="Job psition"
-						company="Company"
-						date="2018-present"
-						etc1="Lorem, ipsum dolor."
-						etc2="Lorem, ipsum dolor."
+						<Education className="education-content top" />
+						<Hr className="line-hr-one"></Hr>
+						<Education className="education-content" />
+					</Section>
+					<Section
+						value="personal-skills"
+						titleName="personal skills"
+						hrClassName="line-hr-small"
 					>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Repudiandae quaerat itaque ipsa amet et accusantium deleniti
-							ipsam, quibusdam necessitatibus cumque!
-						</p>
-					</WorkExp>
-					<WorkExp
-						position="Job psition"
-						company="Company"
-						date="2018-present"
-						etc1="Lorem, ipsum dolor."
-						etc2="Lorem, ipsum dolor."
+						<Pills color="green">
+							<p>Teamwork</p>
+						</Pills>
+						<Pills color="yellow">
+							<p>Communication</p>
+						</Pills>
+						<Pills color="orange">
+							<p>Organization</p>
+						</Pills>
+					</Section>
+					<Section
+						value="technical-skills"
+						titleName="technical skills"
+						hrClassName="line-hr-small"
 					>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Repudiandae quaerat itaque ipsa amet et accusantium deleniti
-							ipsam, quibusdam necessitatibus cumque!
-						</p>
-					</WorkExp>
+						<Pills color="green">
+							<p>Html</p>
+						</Pills>
+						<Pills color="green">
+							<p>Css/scss</p>
+						</Pills>
+						<Pills color="yellow">
+							<p>Javascript</p>
+						</Pills>
+						<Pills color="yellow">
+							<p>React.js</p>
+						</Pills>
+					</Section>
 				</div>
-			</section>
-
+				<Section
+					className="work-experience"
+					titleName="work experience"
+					hrClassName="line-hr-long"
+				>
+					<div className="all-work-experience-content">
+						<WorkExp
+							verticalLine="my-work"
+							position="Job psition"
+							company="Company"
+							date="2018-present"
+							etc1="Lorem, ipsum dolor."
+							etc2="Lorem, ipsum dolor."
+						>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Repudiandae quaerat itaque ipsa amet et accusantium deleniti
+								ipsam, quibusdam necessitatibus cumque!
+							</p>
+						</WorkExp>
+						<WorkExp
+							verticalLine="my-work"
+							position="Job psition"
+							company="Company"
+							date="2018-present"
+							etc1="Lorem, ipsum dolor."
+							etc2="Lorem, ipsum dolor."
+						>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Repudiandae quaerat itaque ipsa amet et accusantium deleniti
+								ipsam, quibusdam necessitatibus cumque!
+							</p>
+						</WorkExp>
+						<WorkExp
+							position="Job psition"
+							company="Company"
+							date="2018-present"
+							etc1="Lorem, ipsum dolor."
+							etc2="Lorem, ipsum dolor."
+						>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Repudiandae quaerat itaque ipsa amet et accusantium deleniti
+								ipsam, quibusdam necessitatibus cumque!
+							</p>
+						</WorkExp>
+					</div>
+				</Section>
+			</main>
 			<footer>
 				<HrOneLine className="line-hr-long"></HrOneLine>
 				<section className="footer">
