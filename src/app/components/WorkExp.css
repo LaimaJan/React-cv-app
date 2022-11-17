@@ -1,0 +1,51 @@
+.work-experience {
+	padding-bottom: 40px;
+}
+
+.work-experience-content-top {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	line-height: 10px;
+}
+
+.work-experience-content-bottom {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.title-of-job {
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.all-work-experience-content {
+	display: flex;
+	flex-direction: row;
+	max-width: fit-content;
+	justify-content: space-between;
+}
+
+.work-experience-content-bottom ul li {
+	list-style-type: circle;
+	line-height: normal;
+	margin-top: 5px;
+	list-style-type: disc;
+	margin-left: -20px;
+}
+
+.work-experience-content-bottom p {
+	text-align: justify;
+	font-size: 18px;
+	line-height: normal;
+}
+
+.work-experience-content {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.my-work {
+	border-right: 3px solid #dcdcdc;
+}

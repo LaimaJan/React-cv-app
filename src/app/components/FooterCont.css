@@ -1,0 +1,49 @@
+.footer-content {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+}
+
+.footer-content a,
+p {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+.footer-content a:active {
+	color: #7abcac;
+}
+
+.footer-content a:focus {
+	color: #7abcac;
+}
+
+.footer-content a:hover {
+	color: #7abcac;
+}
+
+.address,
+.contact,
+.social {
+	font-size: 25px;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	max-width: 250px;
+	padding: 2px 80px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.address-city,
+.phone,
+.linkedin {
+	margin-top: 15px;
+}
+
+.email,
+.twitter {
+	margin-top: 5px;
+}

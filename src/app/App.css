@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'roboto';
+}
+
+.App {
+	max-width: 1170px;
+	min-width: 359px;
+	margin: auto;
+}
+
+main {
+	padding-top: 20px;
+}
+
+.links-about-me {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.about-me {
+	min-width: 210px;
+	margin-bottom: 40px;
+	margin-left: 45px;
+}
+
+.lorem {
+	font-size: 19px;
+	font-weight: 400;
+}
+
+.education-personal-technical-skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.education-content p {
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.top {
+	margin-top: 20px;
+}
+
+.education-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.links,
+.education,
+.personal-skills {
+	padding-bottom: 15px;
+	margin-right: 20px;
+}
+
+.education p {
+	margin-top: -5px;
+}
+
+.personal-skills p,
+.technical-skills p {
+	font-size: 19px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 2px 10px 2px 10px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}

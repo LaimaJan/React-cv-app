@@ -1,0 +1,53 @@
+.line-hr-one {
+	height: 4px;
+	min-width: 201px;
+	background-color: #dcdcdc;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-top: -15px;
+}
+
+.line-hr-long {
+	height: 4px;
+
+	background-color: #dcdcdc;
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.line-hr-long div {
+	height: 12px;
+	min-width: 90px;
+	background-color: #7abcac;
+	margin-top: -5px;
+}
+
+.line-hr-medium {
+	height: 4px;
+	background-color: #dcdcdc;
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.line-hr-medium div {
+	height: 12px;
+	min-width: 90px;
+	background-color: #7abcac;
+	margin-top: -5px;
+}
+
+.line-hr-small {
+	height: 4px;
+	min-width: 350px;
+	background-color: #dcdcdc;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.line-hr-small div {
+	height: 12px;
+	max-width: 90px;
+	background-color: #7abcac;
+	display: block;
+	margin-top: -5px;
+}

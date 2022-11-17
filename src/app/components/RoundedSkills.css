@@ -1,0 +1,20 @@
+.green {
+	background-color: #7abcac;
+	border-radius: 10px;
+	max-width: fit-content;
+	margin-bottom: 30px;
+}
+
+.yellow {
+	background-color: #d8da79;
+	border-radius: 10px;
+	max-width: fit-content;
+	margin-bottom: 30px;
+}
+
+.orange {
+	background-color: #c29486;
+	border-radius: 10px;
+	max-width: fit-content;
+	margin-bottom: 30px;
+}
