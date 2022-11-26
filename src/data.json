@@ -1,0 +1,94 @@
+{
+	"en": {
+		"header": {
+			"name": "Sophie Alpert",
+			"job": "Programmer"
+		},
+		"myLinks": {
+			"title": "Links"
+		},
+		"aboutMe": {
+			"title": "About Me",
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, provident aperiam. Id quia omnis fugit assumenda sit, similique pariatur sunt temporibus amet dolores asperiores corporis ipsam porro. Blanditiis, praesentium! Deleniti officiis tenetur eum porro temporibus exercitationem ipsum sint magni nesciunt cum minima id aliquid totam animi unde quod, aspernatur quos consequatur culpa provident inventore vero maiores aperiam consequuntur. Omnis fugiat nisi quod possimus cumque in vel. Ad suscipit eius similique placeat enim quae nemo atque dolores, necessitatibus mollitia iste rerum!"
+		},
+		"education": {
+			"title": "Education",
+			"school": "School",
+			"degree": "Degree"
+		},
+		"personalSkills": {
+			"personalSkillsTitle": "Personal skills",
+			"teamwork": "Teamwork",
+			"communication": "Communication",
+			"organization": "Organization"
+		},
+		"technicalSkills": {
+			"technicalSkillsTitle": "Technical Skills"
+		},
+		"workExperience": {
+			"workExperienceTitle": "Work Experience",
+			"jobPosition": "Job position",
+			"company": "Company",
+			"timeWorked": "2018-present",
+			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat itaque ipsa amet et accusantium deleniti ipsam, quibusdam necessitatibus cumque!",
+			"contentEtc1": "Lorem, ipsum dolor.",
+			"contentEtc2": "Lorem, ipsum dolor."
+		},
+		"address": {
+			"locationTitle": "location",
+			"myAddress": "Porto, Portugal"
+		},
+		"contact": {
+			"contactTitle": "Contact"
+		},
+		"social": {
+			"socialTitle": "Social"
+		}
+	},
+	"lt": {
+		"header": {
+			"name": "Sofija Alpert",
+			"job": "Programuotoja"
+		},
+		"myLinks": {
+			"title": "Nuorodos"
+		},
+		"aboutMe": {
+			"title": "Apie Mane",
+			"content": "Lietuviskas lorem ipsum apie kazka - Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, provident aperiam. Id quia omnis fugit assumenda sit, similique pariatur sunt temporibus amet dolores asperiores corporis ipsam porro. Blanditiis, praesentium! Deleniti officiis tenetur eum porro temporibus exercitationem ipsum sint magni nesciunt cum minima id aliquid totam animi unde quod, aspernatur quos consequatur culpa provident inventore vero maiores aperiam consequuntur. Omnis fugiat nisi quod possimus cumque in vel. Ad suscipit eius similique placeat enim quae nemo atque dolores, necessitatibus mollitia iste rerum!"
+		},
+		"education": {
+			"title": "Išsilavinimas",
+			"school": "Mokykla",
+			"degree": "Laipsnis"
+		},
+		"personalSkills": {
+			"personalSkillsTitle": "Sugebėjimai",
+			"teamwork": "Darbas grupėje",
+			"communication": "Komunikacija",
+			"organization": "Organizacija"
+		},
+		"technicalSkills": {
+			"technicalSkillsTitle": "Darbo įgūdžiai"
+		},
+		"workExperience": {
+			"workExperienceTitle": "Darbo patirtis",
+			"jobPosition": "Darbo patirtis",
+			"company": "Kompanija",
+			"timeWorked": "2018-dabar",
+			"content": "Lietuviskas lorem ipsum apie kazka -  Repudiandae quaerat itaque ipsa amet et accusantium deleniti ipsam, quibusdam necessitatibus cumque!",
+			"contentEtc1": "Lietuviskas lorem ipsum apie kazka.",
+			"contentEtc2": "Lietuviskas lorem ipsum apie kazka."
+		},
+		"address": {
+			"locationTitle": "Adresas",
+			"myAddress": "Porto, Portugalija"
+		},
+		"contact": {
+			"contactTitle": "Kontaktai"
+		},
+		"social": {
+			"socialTitle": "Soc. tinklai"
+		}
+	}
+}

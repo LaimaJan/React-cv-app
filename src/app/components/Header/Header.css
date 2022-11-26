@@ -12,22 +12,6 @@ header {
 	align-items: center;
 }
 
-.cv-language {
-	background-color: #c4c4c4;
-	margin-right: 40px;
-	padding: 10px 15px;
-	font-size: 14px;
-	font-weight: bold;
-	border: none;
-	outline: none;
-	appearance: none;
-}
-
-.cv-language option {
-	background-color: #c4c4c4;
-	color: black;
-}
-
 .header-bottom-box {
 	text-align: center;
 	border: 4px solid black;

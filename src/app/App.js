@@ -1,37 +1,47 @@
+import { useState } from 'react';
 import './App.css';
-import { Hr, HrOneLine } from './components/Hr';
-import Header from './components/Header';
-import LinksUl from './components/LinksUl';
-import Education from './components/Education';
-import Pills from './components/RoundedSkills';
-import WorkExp from './components/WorkExp';
-import FooterContent from './components/FooterCont';
-import Section from './components/Section';
+import { Hr, HrOneLine } from './components/Hr/Hr';
+import Header from './components/Header/HeaderFinal';
+import LinksUl from './components/Links/LinksUl';
+import Education from './components/Education/Education';
+import Pills from './components/Pills/RoundedSkills';
+import WorkExp from './components/WorkExperience/WorkExp';
+import FooterContent from './components/Footer/FooterCont';
+import Section from './components/Section/Section';
+import data from '../data.json';
 
 function App() {
+	const [lang, setLang] = useState('en');
+
+	const {
+		aboutMe,
+		myLinks,
+		education,
+		personalSkills,
+		technicalSkills,
+		workExperience,
+		address,
+		contact,
+		social,
+	} = data[lang];
+
 	return (
 		<div className="App">
-			<Header />
+			<Header lang={lang} onLangChange={setLang} />
 			<div className="links-about-me">
-				<Section value="links" titleName="links" hrClassName="line-hr-small">
+				<Section
+					value="links"
+					titleName={myLinks.title}
+					hrClassName="line-hr-small"
+				>
 					<LinksUl />
 				</Section>
 				<Section
 					value="about-me"
-					titleName="about me"
+					titleName={aboutMe.title}
 					hrClassName="line-hr-medium"
 				>
-					<p className="lorem">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-						provident aperiam. Id quia omnis fugit assumenda sit, similique
-						pariatur sunt temporibus amet dolores asperiores corporis ipsam
-						porro. Blanditiis, praesentium! Deleniti officiis tenetur eum porro
-						temporibus exercitationem ipsum sint magni nesciunt cum minima id
-						aliquid totam animi unde quod, aspernatur quos consequatur culpa
-						provident inventore vero maiores aperiam consequuntur. Omnis fugiat
-						nisi quod possimus cumque in vel. Ad suscipit eius similique placeat
-						enim quae nemo atque dolores, necessitatibus mollitia iste rerum!
-					</p>
+					<p className="lorem">{aboutMe.content}</p>
 				</Section>
 			</div>
 
@@ -39,31 +49,39 @@ function App() {
 				<div className="education-personal-technical-skills">
 					<Section
 						value="education"
-						titleName="education"
+						titleName={education.title}
 						hrClassName="line-hr-small"
 					>
-						<Education className="education-content top" />
+						<Education
+							className="education-content top"
+							schoolName={education.school}
+							degree={education.degree}
+						/>
 						<Hr className="line-hr-one"></Hr>
-						<Education className="education-content" />
+						<Education
+							className="education-content"
+							schoolName={education.school}
+							degree={education.degree}
+						/>
 					</Section>
 					<Section
 						value="personal-skills"
-						titleName="personal skills"
+						titleName={personalSkills.personalSkillsTitle}
 						hrClassName="line-hr-small"
 					>
 						<Pills color="green">
-							<p>Teamwork</p>
+							<p>{personalSkills.teamwork}</p>
 						</Pills>
 						<Pills color="yellow">
-							<p>Communication</p>
+							<p>{personalSkills.communication}</p>
 						</Pills>
 						<Pills color="orange">
-							<p>Organization</p>
+							<p>{personalSkills.organization}</p>
 						</Pills>
 					</Section>
 					<Section
 						value="technical-skills"
-						titleName="technical skills"
+						titleName={technicalSkills.technicalSkillsTitle}
 						hrClassName="line-hr-small"
 					>
 						<Pills color="green">
@@ -82,50 +100,38 @@ function App() {
 				</div>
 				<Section
 					className="work-experience"
-					titleName="work experience"
+					titleName={workExperience.workExperienceTitle}
 					hrClassName="line-hr-long"
 				>
 					<div className="all-work-experience-content">
 						<WorkExp
 							verticalLine="my-work"
-							position="Job psition"
-							company="Company"
-							date="2018-present"
-							etc1="Lorem, ipsum dolor."
-							etc2="Lorem, ipsum dolor."
+							position={workExperience.jobPosition}
+							company={workExperience.company}
+							date={workExperience.timeWorked}
+							etc1={workExperience.contentEtc1}
+							etc2={workExperience.contentEtc2}
 						>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Repudiandae quaerat itaque ipsa amet et accusantium deleniti
-								ipsam, quibusdam necessitatibus cumque!
-							</p>
+							<p>{workExperience.content}</p>
 						</WorkExp>
 						<WorkExp
 							verticalLine="my-work"
-							position="Job psition"
-							company="Company"
-							date="2018-present"
-							etc1="Lorem, ipsum dolor."
-							etc2="Lorem, ipsum dolor."
+							position={workExperience.jobPosition}
+							company={workExperience.company}
+							date={workExperience.timeWorked}
+							etc1={workExperience.contentEtc1}
+							etc2={workExperience.contentEtc2}
 						>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Repudiandae quaerat itaque ipsa amet et accusantium deleniti
-								ipsam, quibusdam necessitatibus cumque!
-							</p>
+							<p>{workExperience.content}</p>
 						</WorkExp>
 						<WorkExp
-							position="Job psition"
-							company="Company"
-							date="2018-present"
-							etc1="Lorem, ipsum dolor."
-							etc2="Lorem, ipsum dolor."
+							position={workExperience.jobPosition}
+							company={workExperience.company}
+							date={workExperience.timeWorked}
+							etc1={workExperience.contentEtc1}
+							etc2={workExperience.contentEtc2}
 						>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Repudiandae quaerat itaque ipsa amet et accusantium deleniti
-								ipsam, quibusdam necessitatibus cumque!
-							</p>
+							<p>{workExperience.content}</p>
 						</WorkExp>
 					</div>
 				</Section>
@@ -134,11 +140,11 @@ function App() {
 				<HrOneLine className="line-hr-long"></HrOneLine>
 				<section className="footer">
 					<FooterContent>
-						<p className="address">Location</p>
-						<p className="address-city">Porto, Portugal</p>
+						<p className="address">{address.locationTitle}</p>
+						<p className="address-city">{address.myAddress}</p>
 					</FooterContent>
 					<FooterContent>
-						<p className="contact">Contact</p>
+						<p className="contact">{contact.contactTitle}</p>
 						<a href="tel:+370600000333" className="phone">
 							+370600000333
 						</a>
@@ -147,7 +153,7 @@ function App() {
 						</a>
 					</FooterContent>
 					<FooterContent>
-						<p className="social">Social</p>
+						<p className="social">{social.socialTitle}</p>
 						<a href="https://www.linkedin.com/" className="linkedin">
 							Linkedin/username
 						</a>

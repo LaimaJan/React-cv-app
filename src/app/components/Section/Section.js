@@ -1,6 +1,6 @@
-import '../App.css';
-import Title from './Title';
-import { Hr } from './Hr';
+import '../../App.css';
+import Title from '../Title/Title';
+import { Hr } from '../Hr/Hr';
 
 function Section({ value, titleName, hrClassName, children }) {
 	let className = 'section';

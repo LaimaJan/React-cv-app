@@ -1,9 +1,9 @@
 import './LinksUl.css';
 import Links from './Links';
-import Twitter from '../images/Twitter.png';
-import LinkedIn from '../images/linkedIn.png';
-import Github from '../images/Github.png';
-import Dev from '../images/Dev.png';
+import Twitter from '../../images/Twitter.png';
+import LinkedIn from '../../images/linkedIn.png';
+import Github from '../../images/Github.png';
+import Dev from '../../images/Dev.png';
 
 function LinksUl() {
 	return (

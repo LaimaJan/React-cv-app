@@ -1,4 +1,4 @@
-import './Hr.css';
+import '../Hr/Hr.css';
 
 function Hr({ className }) {
 	return (

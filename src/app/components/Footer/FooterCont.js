@@ -1,4 +1,4 @@
-import './FooterCont.css';
+import '../Footer/FooterCont.css';
 
 function FooterContent({ children }) {
 	return <div className="footer-content">{children}</div>;
